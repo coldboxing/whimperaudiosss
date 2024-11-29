@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video with Info Box</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('132mx.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .video-box {
+            width: 640px;
+            height: 360px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info-box {
+            width: 300px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer-text {
+            position: fixed;
+            bottom: 20px;
+            font-size: 24px;
+            color: white;
+            text-shadow: 
+                0px 0px 5px white, 
+                0px 0px 10px white, 
+                -1px -1px 0 black, 
+                1px -1px 0 black, 
+                -1px 1px 0 black, 
+                1px 1px 0 black;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-box">
+            <video controls>
+                <source src="kwadkfc.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="info-box">
+            <p>
+                If you would like to buy more whimper audios like this, 
+                then shoot me a DM on Discord. My Discord tag is at the bottom
+                of the webpage!
+            </p>
+            <p>
+                I charge £10 for a whimper audio, mostly 3 minutes and over.
+            </p>
+        </div>
+    </div>
+    <div class="footer-text">discord: soxynet</div>
+</body>
+</html>
